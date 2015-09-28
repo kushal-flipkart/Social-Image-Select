@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 import ly.kite.instagramphotopicker.InstagramPhoto;
 import xyz.kushal.socialimageselect.R;
-import xyz.kushal.utils.AppController;
+import xyz.kushal.utils.ApplicationController;
 
 /**
  * Created by Kush on 9/28/2015.
@@ -36,7 +36,7 @@ public class InstagramAdapter extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        ((InstagramViewHolder) holder).getImageView().setImageUrl(String.valueOf(photoList.get(position).getThumbnailURL()), AppController.getInstance().getImageLoader());
+        ((InstagramViewHolder) holder).getImageView().setImageUrl(String.valueOf(photoList.get(position).getThumbnailURL()), ApplicationController.getInstance().getImageLoader());
     }
 
     @Override

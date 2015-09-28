@@ -40,7 +40,7 @@ import java.util.Random;
 import ly.kite.instagramphotopicker.InstagramPhoto;
 import xyz.kushal.fragments.InstagramFragment;
 import xyz.kushal.fragments.SdCardFragment;
-import xyz.kushal.utils.AppController;
+import xyz.kushal.utils.ApplicationController;
 import xyz.kushal.utils.MediaStorePhoto;
 
 public class PhotoAlbumActivity extends AppCompatActivity {
@@ -242,7 +242,7 @@ public class PhotoAlbumActivity extends AppCompatActivity {
             }
         });
 
-        AppController.getInstance().addToRequestQueue(imageRequest);
+        ApplicationController.getInstance().addToRequestQueue(imageRequest);
     }
 
     static class Adapter extends FragmentPagerAdapter {

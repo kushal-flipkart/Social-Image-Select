@@ -10,16 +10,16 @@ import com.android.volley.toolbox.Volley;
 
 /**
  * Created by kushal on 26/07/15.
- * AppController
+ * ApplicationController
  */
 
-public class AppController extends Application {
-    private static final String TAG = AppController.class.getSimpleName();
-    private static AppController mInstance;
+public class ApplicationController extends Application {
+    private static final String TAG = ApplicationController.class.getSimpleName();
+    private static ApplicationController mInstance;
     private RequestQueue mRequestQueue;
     private ImageLoader mImageLoader;
 
-    public static synchronized AppController getInstance() {
+    public static synchronized ApplicationController getInstance() {
         return mInstance;
     }
 
